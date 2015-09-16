@@ -1,0 +1,80 @@
+{
+	"format_version": "1.0.0",
+	"default_step_lib_source": "https://github.com/bitrise-io/bitrise-steplib.git",
+	"app": {
+		"envs": [
+			{
+				"BITRISE_PROJECT_TITLE": "lesson_3 $HOME",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			},
+			{
+				"BITRISE_DEV_BRANCH": "master",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			}
+		]
+	},
+	"workflows": {
+		"example-envs": {
+			"steps": [
+				{
+					"script": {
+						"source": {},
+						"inputs": [
+							{
+								"content": "#!/bin/bash\necho \"Hello world!\"\necho \"BITRISE_PROJECT_TITLE (HOME should NOT be expanded): ${BITRISE_PROJECT_TITLE}\"\nexport EXP_TEST='Exported value'\necho \"EXP_TEST: ${EXP_TEST}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"source": {},
+						"inputs": [
+							{
+								"content": "#!/bin/bash\necho \"Second script/step\"\necho \"BITRISE_DEV_BRANCH: ${BITRISE_DEV_BRANCH}\"\necho \"EXP_TEST (should be empty): ${EXP_TEST}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"source": {},
+						"inputs": [
+							{
+								"content": "#!/bin/bash\necho \"Read from .bitrise.secrets.yml: ${BITRISE_SECRET_TEST1}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"source": {},
+						"inputs": [
+							{
+								"content": "#!/bin/bash\necho 'This ENV should NOT be expanded: ${BITRISE_PROJECT_TITLE}'\n",
+								"opts": {}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

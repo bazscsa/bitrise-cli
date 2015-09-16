@@ -1,0 +1,106 @@
+{
+	"format_version": "1.0.0",
+	"default_step_lib_source": "https://github.com/bitrise-io/bitrise-steplib.git",
+	"app": {
+		"envs": [
+			{
+				"BITRISE_PROJECT_TITLE": "lesson_4",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			},
+			{
+				"BITRISE_DEV_BRANCH": "master",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			}
+		]
+	},
+	"workflows": {
+		"fail": {
+			"steps": [
+				{
+					"script": {
+						"title": "ok",
+						"source": {}
+					}
+				},
+				{
+					"script": {
+						"title": "ls",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\nls -alh\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "fail",
+						"source": {},
+						"is_skippable": true,
+						"inputs": [
+							{
+								"content": "#/bin/bash\nset -v\nexit 1\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "fail 2",
+						"source": {},
+						"is_skippable": false,
+						"inputs": [
+							{
+								"content": "#/bin/bash\nset -v\nexit 1\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "ok",
+						"source": {},
+						"is_always_run": false,
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"-----\u003e This should NOT be printed!!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "ok",
+						"source": {},
+						"is_always_run": true,
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"-----\u003e This should be printed!!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}

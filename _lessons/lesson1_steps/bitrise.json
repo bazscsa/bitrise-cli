@@ -1,0 +1,207 @@
+{
+	"format_version": "1.0.0",
+	"default_step_lib_source": "https://github.com/bitrise-io/bitrise-steplib.git",
+	"app": {
+		"envs": [
+			{
+				"BITRISE_PROJECT_TITLE": "lesson_1",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			},
+			{
+				"BITRISE_DEV_BRANCH": "master",
+				"opts": {
+					"title": "",
+					"description": "",
+					"summary": "",
+					"is_required": false,
+					"is_expand": true,
+					"is_dont_change_value": false
+				}
+			}
+		]
+	},
+	"workflows": {
+		"steplib_steps": {
+			"steps": [
+				{
+					"https://github.com/bitrise-io/bitrise-steplib.git::script@0.9.0": {
+						"title": "Full ID",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"Welcome to Bitrise!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"::script@0.9.0": {
+						"title": "Using default_step_lib_source",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"Welcome to Bitrise!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script@0.9.0": {
+						"title": "Using default_step_lib_source, without ::",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"Welcome to Bitrise!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script@": {
+						"title": "Using default_step_lib_source, without ::",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"Welcome to Bitrise!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "Using default_step_lib_source, without ::",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\necho \"Welcome to Bitrise!\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "ok",
+						"source": {}
+					}
+				},
+				{
+					"git::https://github.com/bitrise-io/steps-timestamp.git@master": {
+						"title": "remote_git-stamp-test",
+						"source": {}
+					}
+				},
+				{
+					"script": {
+						"title": "print time",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\nset -e\necho \"ISO_DATETIME: ${ISO_DATETIME}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "ok",
+						"source": {}
+					}
+				},
+				{
+					"script": {
+						"title": "print time",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"git-clone": {
+						"title": "Clone timestamp repo for local use",
+						"source": {},
+						"run_if": "true",
+						"inputs": [
+							{
+								"opts": {},
+								"repository_url": "https://github.com/bitrise-io/steps-timestamp"
+							},
+							{
+								"clone_into_dir": "steps-timestamp",
+								"opts": {}
+							},
+							{
+								"branch": "master",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"path::./steps-timestamp": {
+						"title": "relative_pth-stamp-test",
+						"source": {}
+					}
+				},
+				{
+					"script": {
+						"title": "print time",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\nset -e\necho \"ISO_DATETIME: ${ISO_DATETIME}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				},
+				{
+					"script": {
+						"title": "ok",
+						"source": {}
+					}
+				},
+				{
+					"path::~/Documents/Development/bitrise-cli/_lessons/lesson1_steps/steps-timestamp": {
+						"title": "local_time-stamp-test",
+						"source": {}
+					}
+				},
+				{
+					"path::$HOME/Documents/Development/bitrise-cli/_lessons/lesson1_steps/steps-timestamp": {
+						"title": "local_time-stamp-test",
+						"source": {}
+					}
+				},
+				{
+					"script": {
+						"title": "print time",
+						"source": {},
+						"inputs": [
+							{
+								"content": "#/bin/bash\nset -e\necho \"ISO_DATETIME: ${ISO_DATETIME}\"\n",
+								"opts": {}
+							}
+						]
+					}
+				}
+			]
+		}
+	}
+}
