@@ -1,0 +1,44 @@
+# Bitrise YML Structure
+
+- `format_version:`
+- `default_step_lib_source:`
+- `title:`
+- `summary:`
+- `description:`
+- `app:`
+  - `title:`
+  - `summary:`
+  - `description:`
+  - `envs:`
+- `trigger_map:`
+  - `- pattern:`
+  - `  is_pull_request_allowed:`
+  - `  workflow:`
+- `workflows:`
+  - `workflowid:`
+    - `title:`
+    - `summary:`
+    - `description:`
+    - `before_run:`
+    - `after_run:`
+    - `envs:`
+    - `steps:`
+      - `- stepid:`
+        - `title:`
+        - `summary:`
+        - `details:`
+        - `website:`
+        - `sourcecodeurl:`
+        - `supporturl:`
+        - `publishedat:`
+        - `source:`
+        - `hostostags:`
+        - `projecttypetags:`
+        - `typetags:`
+        - `dependencies:`
+        - `is_requires_admin_user:`
+        - `is_always_run:`
+        - `is_skippable:`
+        - `run_if:`
+        - `inputs:`
+        - `outputs:`
