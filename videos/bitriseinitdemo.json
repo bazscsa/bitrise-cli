@@ -1,0 +1,630 @@
+{
+  "version": 1,
+  "width": 99,
+  "height": 18,
+  "duration": 43.484326,
+  "command": "/bin/bash",
+  "title": "",
+  "env": {
+    "TERM": "xterm",
+    "SHELL": "/bin/bash"
+  },
+  "stdout": [
+    [
+      0.018855,
+      "\u001b[?1034hbash-3.2$ "
+    ],
+    [
+      1.339265,
+      "b"
+    ],
+    [
+      0.162019,
+      "i"
+    ],
+    [
+      0.121556,
+      "t"
+    ],
+    [
+      0.138889,
+      "r"
+    ],
+    [
+      0.196797,
+      "i"
+    ],
+    [
+      0.095636,
+      "s"
+    ],
+    [
+      0.108624,
+      "e"
+    ],
+    [
+      1.044020,
+      " "
+    ],
+    [
+      0.305093,
+      "i"
+    ],
+    [
+      0.095527,
+      "n"
+    ],
+    [
+      0.112332,
+      "i"
+    ],
+    [
+      0.127774,
+      "t"
+    ],
+    [
+      0.454263,
+      "\r\n"
+    ],
+    [
+      0.089146,
+      "\r\n  ██████╗ ██╗████████╗██████╗ ██╗███████╗███████╗\r\n  ██╔══██╗██║╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝\r\n  ██████╔╝██║   ██║   ██████╔╝██║███████╗█████╗\r\n  ██╔══██╗██║   ██║   ██╔══██╗██║╚════██║██╔══╝\r\n  ██████╔╝██║   ██║   ██║  ██║██║███████║███████╗\r\n  ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝\r\n\r\n"
+    ],
+    [
+      0.000014,
+      "\u001b[32;1mVersion: 1.2.1\u001b[0m\r\n\r\nWhat's the BITRISE_APP_TITLE? : "
+    ],
+    [
+      2.549724,
+      "M"
+    ],
+    [
+      0.658031,
+      "y"
+    ],
+    [
+      0.423299,
+      "A"
+    ],
+    [
+      0.250490,
+      "p"
+    ],
+    [
+      0.147832,
+      "p"
+    ],
+    [
+      1.444205,
+      "\r\n"
+    ],
+    [
+      0.000137,
+      "What's your development branch's name? : "
+    ],
+    [
+      1.796806,
+      "m"
+    ],
+    [
+      0.083827,
+      "a"
+    ],
+    [
+      0.064240,
+      "s"
+    ],
+    [
+      0.267609,
+      "t"
+    ],
+    [
+      0.157548,
+      "e"
+    ],
+    [
+      0.063957,
+      "r"
+    ],
+    [
+      0.343477,
+      "\r\n"
+    ],
+    [
+      0.011506,
+      "\r\n"
+    ],
+    [
+      0.000360,
+      "# NOTES about the bitrise.yml config file:\r\n\r\n"
+    ],
+    [
+      0.000008,
+      "We initialized a bitrise.yml config file for you.\r\nIf you're in this folder you can use this config file\r\n with bitrise automatically, you don't have to\r\n specify it's path.\r\n\r\n"
+    ],
+    [
+      0.000246,
+      "\r\n"
+    ],
+    [
+      0.000009,
+      "# NOTES about the .bitrise.secrets.yml secrets file:\r\n\r\nWe also created a .bitrise.secrets.yml file\r\n in this directory, to keep your passwords, absolute path configurations\r\n"
+    ],
+    [
+      0.000025,
+      " and other secrets separate from your\r\n main configuration file.\r\nThis way you can safely commit and share your configuration file\r\n and ignore this secrets file, so nobody else will\r\n"
+    ],
+    [
+      0.000004,
+      " know about your secrets.\r\n"
+    ],
+    [
+      0.000003,
+      "\u001b[33;1mYou should NEVER commit this secrets file into your repository!!\u001b[0m\r\n"
+    ],
+    [
+      0.000004,
+      "\r\n"
+    ],
+    [
+      0.000174,
+      "\u001b[32;1mFor your convenience we added the pattern '.bitrise*' to your .gitignore file\u001b[0m\r\n to make it sure that no secrets or temporary work directories will be\r\n committed into your repository.\r\n\r\n"
+    ],
+    [
+      0.000007,
+      "Hurray, you're good to go!\r\nYou can simply run:\r\n-\u003e bitrise run test\r\nto test the sample configuration (which contains\r\n"
+    ],
+    [
+      0.000011,
+      "an example workflow called 'test').\r\n\r\n"
+    ],
+    [
+      0.000004,
+      "Once you tested this sample setup you can\r\n open the bitrise.yml config file,\r\n modify it and then run a workflow with:\r\n-\u003e bitrise run YOUR-WORKFLOW-NAME\r\n or trigger a build with a pattern:\r\n"
+    ],
+    [
+      0.000004,
+      "-\u003e bitrise trigger YOUR/PATTERN\r\n"
+    ],
+    [
+      0.001980,
+      "bash-3.2$ "
+    ],
+    [
+      11.892734,
+      "b"
+    ],
+    [
+      0.208577,
+      "i"
+    ],
+    [
+      0.255017,
+      "t"
+    ],
+    [
+      0.152573,
+      "r"
+    ],
+    [
+      0.158545,
+      "i"
+    ],
+    [
+      0.112159,
+      "s"
+    ],
+    [
+      0.185769,
+      "e"
+    ],
+    [
+      0.279775,
+      " "
+    ],
+    [
+      0.510189,
+      "r"
+    ],
+    [
+      0.185124,
+      "u"
+    ],
+    [
+      0.298135,
+      "n"
+    ],
+    [
+      0.813599,
+      "\r\n"
+    ],
+    [
+      0.008718,
+      "\r\n  ██████╗ ██╗████████╗██████╗ ██╗███████╗███████╗\r\n  ██╔══██╗██║╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝\r\n  ██████╔╝██║   ██║   ██████╔╝██║███████╗█████╗\r\n  ██╔══██╗██║   ██║   ██╔══██╗██║╚════██║██╔══╝\r\n  ██████╔╝██║   ██║   ██║  ██║██║███████║███████╗\r\n  ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝\r\n\r\n\u001b[32;1mVersion: 1.2.1\u001b[0m\r\n\r\n"
+    ],
+    [
+      0.006097,
+      "\u001b[31mERRO\u001b[0m[11:40:23] No workfow specified!                        \r\n"
+    ],
+    [
+      0.000014,
+      "\u001b[34mINFO\u001b[0m[11:40:23] The following workflows are available:       \r\n\u001b[34mINFO\u001b[0m[11:40:23]  * fallback                                  \r\n"
+    ],
+    [
+      0.000006,
+      "\u001b[34mINFO\u001b[0m[11:40:23]  * test                                      \r\n"
+    ],
+    [
+      0.000006,
+      "\r\n"
+    ],
+    [
+      0.000020,
+      "\u001b[34mINFO\u001b[0m[11:40:23] You can run a selected workflow with:        \r\n"
+    ],
+    [
+      0.000007,
+      "\u001b[34mINFO\u001b[0m[11:40:23] -\u003e bitrise run the-workflow-name             \r\n"
+    ],
+    [
+      0.000004,
+      "\r\n"
+    ],
+    [
+      0.002551,
+      "bash-3.2$ "
+    ],
+    [
+      4.425512,
+      "bitrise run"
+    ],
+    [
+      1.035692,
+      " "
+    ],
+    [
+      0.289594,
+      "t"
+    ],
+    [
+      0.403934,
+      "e"
+    ],
+    [
+      0.232883,
+      "s"
+    ],
+    [
+      0.191030,
+      "t"
+    ],
+    [
+      0.557096,
+      "\r\n"
+    ],
+    [
+      0.012619,
+      "\r\n  ██████╗ ██╗████████╗██████╗ ██╗███████╗███████╗\r\n  ██╔══██╗██║╚══██╔══╝██╔══██╗██║██╔════╝██╔════╝\r\n  ██████╔╝██║   ██║   ██████╔╝██║███████╗█████╗\r\n  ██╔══██╗██║   ██║   ██╔══██╗██║╚════██║██╔══╝\r\n  ██████╔╝██║   ██║   ██║  ██║██║███████║███████╗\r\n  ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝\r\n\r\n\u001b[32;1mVersion: 1.2.1\u001b[0m\r\n\r\n"
+    ],
+    [
+      0.115657,
+      "\r\n"
+    ],
+    [
+      0.000197,
+      "\u001b[34mINFO\u001b[0m[11:40:31] \u001b[34;1mRunning workflow (test)\u001b[0m           \r\n\r\n"
+    ],
+    [
+      0.154023,
+      "\u001b[34mINFO\u001b[0m[11:40:31] Step uses latest version -- Updating StepLib ... \r\n"
+    ],
+    [
+      0.008675,
+      "\u001b[34mINFO\u001b[0m[11:40:31] [STEPMAN] - Update                           \r\n"
+    ],
+    [
+      1.457013,
+      "remote: Counting objects: 51, done.\u001b[K\r\n"
+    ],
+    [
+      0.175999,
+      "remote: Total 51 (delta 24), reused 24 (delta 24), pack-reused 27\u001b[K\r\n"
+    ],
+    [
+      0.005431,
+      "Unpacking objects:   1% (1/51)   \r"
+    ],
+    [
+      0.000557,
+      "Unpacking objects:   3% (2/51)   \r"
+    ],
+    [
+      0.001363,
+      "Unpacking objects:   5% (3/51)   \r"
+    ],
+    [
+      0.007341,
+      "Unpacking objects:   7% (4/51)   \r"
+    ],
+    [
+      0.001139,
+      "Unpacking objects:   9% (5/51)   \r"
+    ],
+    [
+      0.001469,
+      "Unpacking objects:  11% (6/51)   \r"
+    ],
+    [
+      0.001010,
+      "Unpacking objects:  13% (7/51)   \r"
+    ],
+    [
+      0.002655,
+      "Unpacking objects:  15% (8/51)   \r"
+    ],
+    [
+      0.000911,
+      "Unpacking objects:  17% (9/51)   \r"
+    ],
+    [
+      0.000805,
+      "Unpacking objects:  19% (10/51)   \r"
+    ],
+    [
+      0.000947,
+      "Unpacking objects:  21% (11/51)   \r"
+    ],
+    [
+      0.000849,
+      "Unpacking objects:  23% (12/51)   \r"
+    ],
+    [
+      0.000615,
+      "Unpacking objects:  25% (13/51)   \r"
+    ],
+    [
+      0.000705,
+      "Unpacking objects:  27% (14/51)   \r"
+    ],
+    [
+      0.000957,
+      "Unpacking objects:  29% (15/51)   \r"
+    ],
+    [
+      0.000624,
+      "Unpacking objects:  31% (16/51)   \r"
+    ],
+    [
+      0.001219,
+      "Unpacking objects:  33% (17/51)   \r"
+    ],
+    [
+      0.000836,
+      "Unpacking objects:  35% (18/51)   \r"
+    ],
+    [
+      0.000762,
+      "Unpacking objects:  37% (19/51)   \r"
+    ],
+    [
+      0.001167,
+      "Unpacking objects:  39% (20/51)   \r"
+    ],
+    [
+      0.000273,
+      "Unpacking objects:  41% (21/51)   \r"
+    ],
+    [
+      0.000946,
+      "Unpacking objects:  43% (22/51)   \r"
+    ],
+    [
+      0.001019,
+      "Unpacking objects:  45% (23/51)   \r"
+    ],
+    [
+      0.003061,
+      "Unpacking objects:  47% (24/51)   \rUnpacking objects:  49% (25/51)   \rUnpacking objects:  50% (26/51)   \r"
+    ],
+    [
+      0.000444,
+      "Unpacking objects:  52% (27/51)   \r"
+    ],
+    [
+      0.001209,
+      "Unpacking objects:  54% (28/51)   \r"
+    ],
+    [
+      0.000758,
+      "Unpacking objects:  56% (29/51)   \r"
+    ],
+    [
+      0.001496,
+      "Unpacking objects:  58% (30/51)   \r"
+    ],
+    [
+      0.000611,
+      "Unpacking objects:  60% (31/51)   \r"
+    ],
+    [
+      0.000868,
+      "Unpacking objects:  62% (32/51)   \r"
+    ],
+    [
+      0.000629,
+      "Unpacking objects:  64% (33/51)   \r"
+    ],
+    [
+      0.000777,
+      "Unpacking objects:  66% (34/51)   \r"
+    ],
+    [
+      0.000687,
+      "Unpacking objects:  68% (35/51)   \r"
+    ],
+    [
+      0.000874,
+      "Unpacking objects:  70% (36/51)   \r"
+    ],
+    [
+      0.000804,
+      "Unpacking objects:  72% (37/51)   \r"
+    ],
+    [
+      0.001175,
+      "Unpacking objects:  74% (38/51)   \r"
+    ],
+    [
+      0.000714,
+      "Unpacking objects:  76% (39/51)   \r"
+    ],
+    [
+      0.001272,
+      "Unpacking objects:  78% (40/51)   \r"
+    ],
+    [
+      0.000735,
+      "Unpacking objects:  80% (41/51)   \r"
+    ],
+    [
+      0.000518,
+      "Unpacking objects:  82% (42/51)   \r"
+    ],
+    [
+      0.001906,
+      "Unpacking objects:  84% (43/51)   \rUnpacking objects:  86% (44/51)   \r"
+    ],
+    [
+      0.003657,
+      "Unpacking objects:  88% (45/51)   \rUnpacking objects:  90% (46/51)   \rUnpacking objects:  92% (47/51)   \r"
+    ],
+    [
+      0.000550,
+      "Unpacking objects:  94% (48/51)   \r"
+    ],
+    [
+      0.000990,
+      "Unpacking objects:  96% (49/51)   \r"
+    ],
+    [
+      0.001204,
+      "Unpacking objects:  98% (50/51)   \r"
+    ],
+    [
+      0.001536,
+      "Unpacking objects: 100% (51/51)   \rUnpacking objects: 100% (51/51), done.\r\n"
+    ],
+    [
+      0.021121,
+      "From https://github.com/bitrise-io/bitrise-steplib\r\n"
+    ],
+    [
+      0.000010,
+      "   30c3596..0579634  master     -\u003e origin/master\r\n"
+    ],
+    [
+      0.031590,
+      "Updating 30c3596..0579634\r\n"
+    ],
+    [
+      0.051501,
+      "Fast-forward\r\n"
+    ],
+    [
+      0.008537,
+      " steps/carthage/1.0.0/step.yml                           |  50 \u001b[32m+++++++++++++\u001b[m\r\n steps/carthage/assets/icon.svg                          |  72 \u001b[32m+++++++++++++++++++\u001b[m\r\n"
+    ],
+    [
+      0.000012,
+      " steps/cocoapods-and-repository-validator/4.3.0/step.yml |  75 \u001b[32m++++++++++++++++++++\u001b[m\r\n steps/cocoapods-install/1.0.3/step.yml                  |  39 \u001b[32m++++++++++\u001b[m\r\n steps/random-quote/3.0.0/step.yml                       |   6 \u001b[32m+\u001b[m\u001b[31m-\u001b[m\r\n steps/xcode-test/1.5.0/step.yml                         | 134 \u001b[32m+++++++++++++++++++++++++++++++++++\u001b[m\r\n 6 files changed, 373 insertions(+), 3 deletions(-)\r\n"
+    ],
+    [
+      0.000011,
+      " create mode 100644 steps/carthage/1.0.0/step.yml\r\n create mode 100644 steps/carthage/assets/icon.svg\r\n create mode 100644 steps/cocoapods-and-repository-validator/4.3.0/step.yml\r\n create mode 100644 steps/cocoapods-install/1.0.3/step.yml\r\n create mode 100644 steps/xcode-test/1.5.0/step.yml\r\n"
+    ],
+    [
+      0.159296,
+      "\u001b[34mINFO\u001b[0m[11:40:33] [STEPMAN] - Updated                          \r\n"
+    ],
+    [
+      0.101094,
+      "+------------------------------------------------------------------------------+\r\n| (0) timestamp                                                                |\r\n+------------------------------------------------------------------------------+\r\n"
+    ],
+    [
+      0.000223,
+      "| id: timestamp                                                                |\r\n| version: 0.9.1                                                               |\r\n| collection: https://github.com/bitrise-io/bitrise-steplib.git                |\r\n| time: 2015-10-08T11:40:33+02:00                                              |\r\n"
+    ],
+    [
+      0.000016,
+      "+------------------------------------------------------------------------------+\r\n|                                                                              |\r\n"
+    ],
+    [
+      0.000312,
+      "\u001b[33mWARN\u001b[0m[11:40:33] step.dependencies is deprecated... Use step.deps instead. \r\n"
+    ],
+    [
+      0.000011,
+      "\u001b[34mINFO\u001b[0m[11:40:33] Deprecated dependencies found                \r\n"
+    ],
+    [
+      0.692316,
+      "\u001b[34mINFO\u001b[0m[11:40:34]  * \u001b[32;1m[OK]\u001b[0m Step dependency (go) installed, available. \r\n"
+    ],
+    [
+      0.137513,
+      "\r\ngo run ./step.go\r\n"
+    ],
+    [
+      0.623151,
+      "\r\n# =\u003e DONE\r\n"
+    ],
+    [
+      0.002107,
+      "|                                                                              |\r\n+----+--------------------------------------------------------------+----------+\r\n"
+    ],
+    [
+      0.000529,
+      "| ✅  | \u001b[32;1mtimestamp\u001b[0m                                                    | 3.7 sec  |\r\n+----+--------------------------------------------------------------+----------+\r\n"
+    ],
+    [
+      0.000008,
+      "\r\n                                          ▼\r\n\r\n"
+    ],
+    [
+      0.158723,
+      "+------------------------------------------------------------------------------+\r\n| (1) Hello Bitrise!                                                           |\r\n+------------------------------------------------------------------------------+\r\n"
+    ],
+    [
+      0.000027,
+      "| id: script                                                                   |\r\n| version: 1.0.0                                                               |\r\n| collection: https://github.com/bitrise-io/bitrise-steplib.git                |\r\n| time: 2015-10-08T11:40:35+02:00                                              |\r\n+------------------------------------------------------------------------------+\r\n|                                                                              |\r\n"
+    ],
+    [
+      0.243200,
+      "Welcome to Bitrise!\r\n"
+    ],
+    [
+      0.000265,
+      "Current time is: 2015-10-08T11:40:34.890501008+02:00\r\n\r\nYour specified Project Title is: MyApp\r\n and the primary development branch is: master\r\n"
+    ],
+    [
+      0.006615,
+      "|                                                                              |\r\n+----+--------------------------------------------------------------+----------+\r\n| ✅  | \u001b[32;1mHello Bitrise!\u001b[0m                                               | 0.41 sec |\r\n+----+--------------------------------------------------------------+----------+\r\n\r\n\r\n+------------------------------------------------------------------------------+\r\n|                               bitrise summary                                |\r\n+----+--------------------------------------------------------------+----------+\r\n|    | title                                                        | time (s) |\r\n+----+--------------------------------------------------------------+----------+\r\n"
+    ],
+    [
+      0.000126,
+      "| ✅  | \u001b[32;1mtimestamp\u001b[0m                                                    | 3.7 sec  |\r\n+----+--------------------------------------------------------------+----------+\r\n| ✅  | \u001b[32;1mHello Bitrise!\u001b[0m                                               | 0.41 sec |\r\n+----+--------------------------------------------------------------+----------+\r\n"
+    ],
+    [
+      0.000017,
+      "| Total runtime: 4.1 sec                                                       |\r\n+------------------------------------------------------------------------------+\r\n\r\n"
+    ],
+    [
+      0.001912,
+      "bash-3.2$ "
+    ],
+    [
+      4.368244,
+      "exit\r\n"
+    ]
+  ]
+}
